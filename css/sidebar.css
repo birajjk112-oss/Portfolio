@@ -1,0 +1,127 @@
+.sidebar__hamburger {
+  padding: 28px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  z-index: 50;
+  font-size: 24px;
+}
+
+.sidebar__hamburger__translate {
+  transform: translateX(300px);
+}
+
+.sidebar__content {
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(180deg, #f5f7fb, #eef1f7);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  overflow-y: auto;
+  transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+}
+
+.sidebar__hamburger__translate + .sidebar__content {
+  transform: translateX(300px);
+}
+
+.sidebar__image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 45px 0 25px;
+  box-shadow: 0 0 0 4px rgba(44, 152, 240, 0.15);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sidebar__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 6px rgba(44, 152, 240, 0.25);
+}
+
+.sidebar__name {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 6px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.sidebar__job {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2c98f0;
+  text-transform: uppercase;
+}
+
+.sidebar__job > span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0 50px;
+}
+
+.sidebar__list__item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.sidebar__list__item:hover {
+  color: #2c98f0;
+  transform: translateX(4px);
+}
+
+.sidebar__list__item::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #2c98f0;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.sidebar__list__item:hover::after {
+  width: 120%;
+}
+
+.sidebar__copyright {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+.sidebar__copyright > span {
+  color: #2c98f0;
+}

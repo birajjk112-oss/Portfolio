@@ -1,0 +1,91 @@
+.contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* Added gap so cards don't touch */
+  padding: 40px 20px;
+}
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#contactForm button {
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contactForm button:hover {
+  background-color: #555;
+}
+
+.contact_card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  /* Use flex-basis for better responsiveness than a fixed width */
+  flex: 1 1 280px;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Flexbox Layout logic for your cards */
+
+.contact_card i {
+  font-size: 2.2rem; /* Slightly reduced for better balance */
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevents the icon from squishing on small screens */
+}
+
+.contact_card:hover {
+  transform: translateY(-8px); /* Slightly more pronounced lift */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Typography Polish */
+.contact_info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.contact_info p {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: #777;
+  word-break: break-all; /* Prevents long emails from breaking the card layout */
+}
+
+.gmail i {
+  color: #db4437;
+}
+.facebook i {
+  color: #1877f2;
+}
+.instagram i {
+  color: #e1306c;
+}

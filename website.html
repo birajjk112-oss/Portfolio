@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Biraj Karki</title>
+    <meta
+      name="description"
+      content="I am Biraj Karki. Contact if you need an expert."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/edu.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/workcount.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i id="hamburger" class="fa-solid fa-bars sidebar__hamburger"></i>
+      <div class="sidebar__content">
+        <img class="sidebar__image" src="images/side.jpg" alt="Profile Image" />
+        <h1 class="sidebar__name">Biraj Karki</h1>
+        <h2 class="sidebar__job">Developer <span>in Nepal</span></h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item"><a href="#hero">home</a></li>
+          <li class="sidebar__list__item"><a href="#about">about</a></li>
+          <li class="sidebar__list__item"><a href="#skills">skills</a></li>
+          <li class="sidebar__list__item">
+            <a href="#education">education</a>
+          </li>
+          <li class="sidebar__list__item"><a href="#contact">contact</a></li>
+        </ul>
+        <p class="sidebar__copyright">
+          &copy; 2026 rights reserved | Made with &#128150; by
+          <span>Biraj</span>
+        </p>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <h1>HI <br />I am Biraj.</h1>
+      <p>Computer Engineer</p>
+      <button onclick="window.location.href = '#contact'">
+        <span>Contact Me </span><i class="fa-solid fa-envelope"></i>
+      </button>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section_title">About me</p>
+      <p class="section_subtitle">Who am I?</p>
+      <p class="about_description">
+        <span> I am biraj </span> Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quibusdam, harum suscipit. Soluta molestias officia
+        sed ad hic maiores quo optio sint, repudiandae rem, aspernatur ipsam.
+      </p>
+      <div class="about_skills">
+        <div class="about_skills_box">
+          <i class="fa-solid fa-palette"></i>
+          <h3>graphics design</h3>
+        </div>
+        <div class="about_skills_box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>website design</h3>
+        </div>
+        <div class="about_skills_box">
+          <i class="fa-solid fa-database"></i>
+          <h3>SQL and database</h3>
+        </div>
+        <div class="about_skills_box">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile application design</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="work__count">
+      <span>400</span>
+      <span>cups of coffee</span>
+      <span>10</span>
+      <span>projects</span>
+      <span>5</span>
+      <span>Semster</span>
+      <span>25</span>
+      <span>Subjects</span>
+    </section>
+    f
+    <section id="skills" class="section">
+      <p class="section_title">My speciality</p>
+      <p class="section_subtitle">My skills</p>
+      <div class="all-skills">
+        <div class="skill">
+          <p>Html5</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="
+                background: green;
+                color: white;
+                width: 70%;
+                padding: 0 10px;
+              "
+            >
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="
+                background: blue;
+                color: white;
+                width: 60%;
+                padding: 0 10px;
+              "
+            >
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Javascript</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="
+                background: pink;
+                color: black;
+                width: 50%;
+                padding: 0 10px;
+              "
+            >
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>C++</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="
+                background: greenyellow;
+                color: black;
+                width: 80%;
+                padding: 0 10px;
+              "
+            >
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Computer Graphics</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="
+                background: purple;
+                color: black;
+                width: 40%;
+                padding: 0 20px;
+              "
+            >
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Python</p>
+          <div class="skill_bg_box">
+            <div
+              class="skill_percent_box"
+              style="background: red; color: white; width: 30%; padding: 0 10px"
+            >
+              <span>30%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <p class="section_title">My Journey</p>
+      <p class="section_subtitle">Educational Achievements</p>
+
+      <div class="education__item">
+        <span class="education__year"
+          ><i class="fa-solid fa-school"></i> Class 10 (SEE)</span
+        >
+        <h3>Secondary Education Examination</h3>
+        <p>
+          Completed SEE with a strong academic foundation.<strong>
+            GPA(4.00/4.00)
+          </strong>
+        </p>
+      </div>
+
+      <div class="education__item">
+        <span class="education__year"
+          ><i class="fa-solid fa-graduation-cap"></i> Class 12</span
+        >
+        <h3>Higher Secondary Level</h3>
+        <p>
+          Completed higher secondary education in the science stream.<strong>
+            GPA(3.87/4.00)
+          </strong>
+        </p>
+      </div>
+
+      <div class="education__item">
+        <span class="education__year"
+          ><i class="fa-solid fa-book"></i> Bachelor - Semester 1</span
+        >
+        <h3>Introduction to Engineering</h3>
+        <p>
+          Successfully completed the first semester, focusing on fundamental
+          engineering concepts.<strong> GPA(3.90/4.00) </strong>
+        </p>
+      </div>
+
+      <div class="education__item">
+        <span class="education__year"
+          ><i class="fa-solid fa-code"></i> Bachelor - Semester 2</span
+        >
+        <h3>Programming & Logic</h3>
+        <p>
+          Deepened understanding of core technical subjects and logic building.
+          <strong>GPA(3.70/4.00)</strong>
+        </p>
+      </div>
+
+      <div class="education__item">
+        <span class="education__year"
+          ><i class="fa-solid fa-laptop-code"></i> Bachelor - Semester 3</span
+        >
+        <h3>Advanced Technical Skills</h3>
+        <p>
+          Currently focusing on data structures, advanced programming, and
+          hardware integration.<strong>GPA(3.74/4.00)</strong>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="section_title">Get in Touch</p>
+      <p class="section_subtitle">Contact Me</p>
+
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Name" required />
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p class="section_subtitle" style="margin-top: 50px">Contact Channels</p>
+      <div class="contact_container">
+        <a href="mailto:birajjk112@gmail.com" class="contact_card gmail">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="contact_info">
+            <h3>Email</h3>
+            <p>birajjk112@gmail.com</p>
+          </div>
+        </a>
+
+        <a
+          href="https://facebook.com/biraj.karki.775"
+          target="_blank"
+          class="contact_card facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+          <div class="contact_info">
+            <h3>Facebook</h3>
+            <p>Connect on Facebook</p>
+          </div>
+        </a>
+
+        <a
+          href="https://instagram.com/biraj_karki_"
+          target="_blank"
+          class="contact_card instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          <div class="contact_info">
+            <h3>Instagram</h3>
+            <p>Follow for Updates</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector(".sidebar__hamburger");
+      const sidebarContent = document.querySelector(".sidebar__content");
+
+      // Sidebar Toggle
+      hamburger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        this.classList.toggle("sidebar__hamburger__translate");
+      });
+
+      // Close sidebar when clicking elsewhere
+      document.addEventListener("click", function () {
+        hamburger.classList.remove("sidebar__hamburger__translate");
+      });
+
+      // Stop propagation inside sidebar content
+      sidebarContent.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+
+      // Form Submission handler
+      function submitForm(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+
+        if (name.trim() === "") {
+          alert("Please enter your name.");
+          return;
+        }
+
+        console.log("Submission:", { name, message });
+        alert("Thank you, " + name + "! Your message has been sent.");
+      }
+    </script>
+  </body>
+</html>

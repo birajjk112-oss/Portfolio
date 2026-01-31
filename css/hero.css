@@ -1,0 +1,51 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 30px;
+  background-image: url("../images/my - Copy.jpg");
+  background-color: #e4dfdb;
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hero > h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: "Playfair Display";
+}
+
+#hero > p {
+  font-family: "Quicksand";
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+#hero > button {
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+
+  border-radius: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: centre;
+  gap: 10px;
+}
+
+#hero > button > span {
+  font-family: "Quicksand";
+
+  background-color: transparent;
+
+  letter-spacing: 2px;
+  font-size: 12px;
+}

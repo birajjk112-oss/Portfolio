@@ -1,0 +1,23 @@
+.section {
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.section_title {
+  font-style: 10px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.section_subtitle {
+  font-size: 18px;
+  color: black;
+  font-family: "playfair Display";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 45px;
+  line-height: 1.8;
+}
